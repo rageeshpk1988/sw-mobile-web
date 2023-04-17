@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="251.593" height="251.591" viewBox="0 0 251.593 251.591">
+  <g id="Group_17397" data-name="Group 17397" transform="translate(-86 -486.775)">
+    <path id="Icon_material-chat_bubble_outline" data-name="Icon material-chat_bubble_outline" d="M229.434,3H28.159A25.233,25.233,0,0,0,3,28.159V254.591l50.319-50.318H229.434a25.233,25.233,0,0,0,25.159-25.159V28.159A25.233,25.233,0,0,0,229.434,3Zm0,176.113H53.319L28.159,204.273V28.159H229.434Z" transform="translate(83 483.775)" fill="#4b4949"/>
+    <text id="_" data-name="!" transform="translate(211 639.366)" fill="#d8015f" font-size="126" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-22.302" y="0">!</tspan></text>
+  </g>
+</svg>

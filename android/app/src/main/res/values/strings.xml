@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A file created for facebook login-->
+<resources>
+    <string name="app_name">sw_flutter</string>
+    <string name="facebook_app_id">860116448033283</string>
+    <string name="facebook_client_token">fba3c5c677fb730f19d4a507235c3565</string>
+    <string name="fb_login_protocol_scheme">fb860116448033283</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+</resources>
+
+    <!-- A file created for facebook login-->

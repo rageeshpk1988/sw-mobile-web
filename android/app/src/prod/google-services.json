@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "352565823138",
+    "firebase_url": "https://schoolwizarduat.firebaseio.com",
+    "project_id": "schoolwizarduat",
+    "storage_bucket": "schoolwizarduat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352565823138:android:a9fa292535afa2395239fb",
+        "android_client_info": {
+          "package_name": "com.zoftsolutions.schoolwizard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352565823138-8rh2c2s1e98k7j7elg9ukm13trmre5rt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zoftsolutions.schoolwizard",
+            "certificate_hash": "48ef78d19f9206eec62e1137c64bff827e8fd5b4"
+          }
+        },
+        {
+          "client_id": "352565823138-cr9ftan9qq8blccot849tsol2bp2fn2s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zoftsolutions.schoolwizard",
+            "certificate_hash": "a060f02c49b950f44d8cb8d0112ff3113bea8439"
+          }
+        },
+        {
+          "client_id": "352565823138-ejunv6d1vtbjk0h57027dnv8qqr91vsc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zoftsolutions.schoolwizard",
+            "certificate_hash": "08cf0f11d4ace46b00f03ae1a1ed3d985fc39cd5"
+          }
+        },
+        {
+          "client_id": "352565823138-i63gcno5q75omhfefgc70p6gfrgnt3sb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVzrhcnRg22OZHsiE4XZkUw0Qgg3g52_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352565823138-i63gcno5q75omhfefgc70p6gfrgnt3sb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "352565823138-3id8l8228t3edue2mkbtdkun29avoqnq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.zoftsolutions.schoolWizardBeta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352565823138:android:2295ead2bf5dee9a5239fb",
+        "android_client_info": {
+          "package_name": "com.zs.cw4school"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352565823138-i63gcno5q75omhfefgc70p6gfrgnt3sb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVzrhcnRg22OZHsiE4XZkUw0Qgg3g52_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352565823138-i63gcno5q75omhfefgc70p6gfrgnt3sb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "352565823138-3id8l8228t3edue2mkbtdkun29avoqnq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.zoftsolutions.schoolWizardBeta"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

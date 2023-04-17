@@ -1,0 +1,316 @@
+name: schoolwizard
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+7
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  provider: ^6.0.2
+  intl: ^0.17.0
+  http: ^0.13.3
+  shared_preferences: ^2.0.11
+  package_info_plus: ^3.0.2
+  sign_button: ^2.0.1
+  #sqflite: ^2.0.0+4
+  path_provider: ^2.0.5
+  url_launcher: ^6.1.6
+  image_picker: ^0.8.6+1
+  image_cropper: ^3.0.1
+  multi_image_picker2: ^5.0.2
+  getwidget: ^3.0.1
+  path: ^1.8.0
+  cached_network_image: ^3.2.1
+  #flutter_cache_manager: ^3.1.2
+  fluttertoast: ^8.0.8
+  firebase_core: ^2.1.1
+  cloud_firestore: ^4.0.4
+  auto_size_text: ^3.0.0
+  flutter_facebook_auth: ^5.0.7
+  google_sign_in: ^6.0.2
+  firebase_auth: ^4.1.1
+  page_view_indicators: ^2.0.0
+  google_fonts: ^4.0.1
+  share_plus: ^6.3.0
+  crypto: ^3.0.1
+ # google_mobile_ads: ^1.0.1
+  video_thumbnail: ^0.5.3
+  firebase_messaging: ^14.0.4
+  flutter_local_notifications: ^13.0.0
+  webview_flutter: ^3.0.4
+  visibility_detector: ^0.4.0+2
+  flutter_inappwebview: ^5.7.2
+  #visibility_detector: ^0.3.3
+  flutter_share_me: ^1.3.0
+  sign_in_with_apple: ^4.3.0
+  js: 0.6.5
+dependency_overrides:
+  js: ^0.6.7
+  modal_bottom_sheet: ^3.0.0-pre
+
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  introduction_screen: ^3.0.2
+  #chewie: ^1.2.2
+  video_player: ^2.5.1
+  youtube_player_flutter: ^8.1.2
+  country_code_picker: ^2.0.2
+  dropdown_search: ^3.0.1
+  percent_indicator: ^4.2.2
+  # meilisearch: ^0.4.0
+  searchfield: ^0.7.5
+  #internet_connection_checker: ^0.0.1+3
+  internet_connection_checker_plus: ^1.0.1
+  pretty_gauge: ^1.0.1
+  #signal_strength_indicator: ^0.4.1
+  algolia: ^1.0.4
+  linkwell: ^2.0.6
+  loop_page_view: ^1.2.0
+  flutter_svg: ^1.0.3
+  permission_handler: ^10.1.0
+  expandable_text: ^2.3.0
+  flutter_rating_bar: ^4.0.1
+  paytm_allinonesdk: ^1.1.8
+  encrypted_shared_preferences: ^3.0.1
+  webviewx_plus: ^0.3.2
+  in_app_purchase: ^3.1.1
+
+  #sentry_flutter: ^6.2.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: ^0.12.0
+  flutter_native_splash: ^2.2.4
+
+flutter_native_splash:
+  image: assets/images/appicon.png
+  android_screen_orientation: portrait
+  color: "#ffffff"
+
+flutter_icons:
+
+  image_path: "assets/images/app_icon.png"
+  ios: true
+  android: true
+
+
+
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  generate: true
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/profile_dummy.png
+    - assets/images/
+    - assets/images/package_card.png
+    - assets/icons/shopify.png
+    - assets/icons/cart.png
+    - assets/icons/b2c_profile.png
+    # this needs to be removed(next 4)
+    - assets/icons/b2c_home_header_search.png
+    - assets/icons/b2c_home_header_msg.png
+    - assets/icons/b2c_home_header_noti.png
+    - assets/icons/b2c_home_header_new_post.png
+
+    - assets/icons/ic_drawer_open.png
+    - assets/icons/b2c_profile_filled.png
+    - assets/icons/tick-1.png
+    - assets/icons/tick-2.png
+    - assets/icons/onlinekyc_success.png
+    - assets/icons/profile_icon.svg
+    - assets/icons/refer_icon.svg
+    - assets/icons/student_transformation_icon.svg
+    - assets/icons/subscription_icon.svg
+    - assets/icons/suggested_parents_icon.svg
+    - assets/icons/help_and_support.svg
+    - assets/icons/parents_wall.svg
+    - assets/icons/refer_and_earn.svg
+    - assets/icons/products_and_services.svg
+    # this needs to be removed (next 4)
+    - assets/icons/group_3037.png
+    - assets/icons/group_3038.png
+    - assets/icons/group_3039.png
+    - assets/icons/group_3040.png
+
+ # this needs to be removed
+    - assets/images/appicon.png
+
+    - assets/images/app_icon.png
+    - assets/icons/bell.png
+    - assets/icons/menu.png
+
+    # this needs to be removed
+    - assets/icons/home.png
+    - assets/icons/refer.png
+
+    - assets/images/ICON_01_LOOP.gif
+    - assets/images/ICON_02_LOOP.gif
+    - assets/images/ICON_03_LOOP.gif
+    - assets/images/ICON_04_LOOP.gif
+    - assets/images/referral_friend_mob.png
+    - assets/icons/parent_wall_creat.png
+    - assets/icons/parent_wall_search.png
+    - assets/icons/parent_wall_like.png
+
+    # this needs to be removed
+    - assets/icons/parent_wall_liked.png
+
+    - assets/icons/parent_wall_comments.png
+
+    # this needs to be removed
+    - assets/icons/parent_wall_commentsfill.png
+    - assets/icons/parent_wall_share.png
+
+    - assets/icons/not_reg_kyc.png
+    - assets/icons/loading_indicator.gif
+    - assets/icons/reg_kyc.png
+
+      # this needs to be removed
+
+
+
+    - assets/images/nointernet.png
+    - assets/images/ICON_01-min.gif
+    - assets/images/ICON_02-min.gif
+    - assets/images/ICON_03-min.gif
+    - assets/images/ICON_04-min.gif
+    - assets/images/splashscreen.gif
+    - assets/images/advanced.png
+    - assets/images/lg_qt.png
+    - assets/images/transform1.png
+    - assets/images/transform2.png
+    - assets/images/transform3.png
+    - assets/images/transform4.png
+    - assets/images/eval1.png
+    - assets/images/eval2.png
+    - assets/images/eval3.png
+    - assets/images/eval4.png
+    - assets/images/step1.png
+    - assets/images/step2.png
+    - assets/images/step3.png
+    - assets/images/step4.png
+
+    # this needs to be removed(next 3)
+    - assets/images/status1.png
+    - assets/images/status2.png
+    - assets/images/status3.png
+
+    - assets/images/novice.png
+    - assets/images/developing.png
+    - assets/images/proficient.png
+    - assets/images/emptyskill.png
+    - assets/images/novicekid.png
+    - assets/images/developingkid.png
+    - assets/images/proficientkid.png
+    - assets/icons/homepag_filled.svg
+    - assets/icons/bell.svg
+    - assets/icons/refer.svg
+
+      # this needs to be removed
+    - assets/images/Mascot.svg
+
+    - assets/icons/parent_wall_like.svg
+    - assets/icons/parent_wall_unlike.svg
+    - assets/icons/parent_wall_comments.svg
+    - assets/icons/no_comments.svg
+
+    - assets/images/Mascot.png
+
+    - assets/images/ChildTransformationBg.png
+    - assets/images/Developing2.png
+    - assets/images/Novice2.png
+    - assets/images/Proficient2.png
+    - assets/images/More2.png
+    - assets/images/splash1.png
+    - assets/images/splash2.png
+    - assets/images/splash3.png
+    - assets/images/splash1_web.png
+    - assets/images/splash2_web.png
+    - assets/images/splash3_web.png
+    - assets/images/currentplan.png
+    - assets/images/newplan.png
+    - assets/icons/alert_info.png
+    - assets/icons/alert_checkmark.png
+    - assets/icons/addchild.png
+    - assets/images/changenumber.png
+    - assets/icons/reportabuse.svg
+    - assets/icons/download.png
+    - assets/icons/subscribers.png
+
+
+  #   - images/a_dot_ham.jpeg
+  #
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: SwIcons
+      fonts:
+        - asset: assets/icons/SwIcons.ttf
+    - family: SFUIDisplay
+      fonts:
+        - asset: assets/fonts/SF UI Display Regular.ttf
+          weight: 300
+        - asset: assets/fonts/sf-ui-display-black-58646a6b80d5a.otf
+          weight: 900
+        - asset: assets/fonts/sf-ui-display-heavy-586470160b9e5.otf
+          weight: 800
+        - asset: assets/fonts/sf-ui-display-bold-58646a511e3d9.otf
+          weight: 700
+        - asset: assets/fonts/sf-ui-display-semibold-58646eddcae92.otf
+          weight: 600
+        - asset: assets/fonts/sf-ui-display-medium-58646be638f96.otf
+          weight: 400
+        - asset: assets/fonts/sf-ui-display-light-58646b33e0551.otf
+          weight: 300
+        - asset: assets/fonts/sf-ui-display-thin-58646e9b26e8b.otf
+          weight: 200
+        - asset: assets/fonts/sf-ui-display-ultralight-58646b19bf205.otf
+          weight: 100
+
+
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "614960272316",
+    "firebase_url": "https://schoowizardqa.firebaseio.com",
+    "project_id": "schoowizardqa",
+    "storage_bucket": "schoowizardqa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614960272316:android:68913d7e7b73f38a4411b9",
+        "android_client_info": {
+          "package_name": "com.zoftsolutions.schoolwizard.qa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614960272316-03dqr61tqrjn106hnuip3ndsf9ma8qqt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zoftsolutions.schoolwizard.qa",
+            "certificate_hash": "9fa273c04a5a4826b683d3d00e70d30699acdbcc"
+          }
+        },
+        {
+          "client_id": "614960272316-2i5vc0cg8mdqv17j4ih26ntt5psdni1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zoftsolutions.schoolwizard.qa",
+            "certificate_hash": "a060f02c49b950f44d8cb8d0112ff3113bea8439"
+          }
+        },
+        {
+          "client_id": "614960272316-1fphm8rq9koblgagiga9t58gnatdoqjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7JFs44jJoW8HxAP5vQNy2yChMfV8Oi6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614960272316-1fphm8rq9koblgagiga9t58gnatdoqjp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
