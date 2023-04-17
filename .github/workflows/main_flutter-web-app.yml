@@ -6,51 +6,55 @@ name: Build and deploy Node.js app to Azure Web App - flutter-web-app
 on:
   push:
     branches:
-      - main
-  workflow_dispatch:
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
-
+    
     steps:
-      - uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Install Flutter
+      uses: subosito/flutter-action@v1
+      with:
+        flutter-version: '2.0.5'
+    
+    - name: Get dependencies
+      run: flutter pub get
+    
+    - name: Test project
+      run: flutter test
+    
+    - name: Build release project
+      run: flutter build web
 
-      - name: Set up Node.js version
-        uses: actions/setup-node@v1
-        with:
-          node-version: '16.x'
-
-      - name: npm install, build, and test
-        run: |
-          npm install
-          npm run build --if-present
-          npm run test --if-present
-
-      - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v2
-        with:
-          name: node-app
-          path: .
-
+    - name: Upload production-ready build files
+      uses: actions/upload-artifact@v2
+      with:
+        name: production-files
+        path: ./build/web
+  
   deploy:
-    runs-on: ubuntu-latest
+    name: Deploy
     needs: build
-    environment:
-      name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    
     steps:
-      - name: Download artifact from build job
-        uses: actions/download-artifact@v2
-        with:
-          name: node-app
+    - name: Download artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: production-files
+        path: ./build
 
-      - name: 'Deploy to Azure Web App'
-        id: deploy-to-webapp
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: 'flutter-web-app'
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_418301089D404719AF6E4F7EBF2EE2D2 }}
-          package: .
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
